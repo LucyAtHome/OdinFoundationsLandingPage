@@ -1,7 +1,9 @@
 * {
   font-family:Roboto;
 }
-
+body {
+  margin:0px;
+}
 h3 {
   font-size:36px;
   color:#1f2937;
@@ -27,21 +29,31 @@ a {
 }
 
 button {
-  height:64px;
+  height:54px;
   width:110px;
   background-color:#3882f6;
-  border:0px;
-  padding:2px;
-  border-radius:5px 5px 5px 5px;
   color:#e5e7eB;
   font-size:18px;
   font-weight:bold;
+  border-radius:5px 5px 5px 5px;
+}
+
+.header_button {
+
+  border:0px;
+  padding:2px;
+
 }
 
 .header {
   display:flex;
   justify-content:space-between;
   background-color:#1f2937;
+  color:#f9faf8;
+}
+
+.logo {
+  font-size:24px;
   color:#f9faf8;
 }
 
@@ -52,6 +64,7 @@ button {
   background-color:#1f2937;
   color:#f9faf8;
   height:100px;
+
 }
 
 .left {
@@ -118,9 +131,17 @@ img.cardimg {
   color:#1f2937;
   font-style:italic;
   display:flex;
+  flex-direction:column;
   justify-content:center;
-  align-items:center;
+  align-items:flex-end;
   height:400px;
+  font-weight:lighter; 
+  flex:1;
+  padding: 0px 400px;
+}
+
+.thor{
+font-size:24px;
 }
 .padding{
   height:400px;
@@ -133,5 +154,33 @@ img.cardimg {
   color:#e5e7eB;
   background-color:#3882f6;
   justify-content:center;
+  align-items:center;
+  padding:32px 20px;
+  border-radius:10px 10px 10px 10px;
+  width:800px;
 
+
+}
+
+.call_button {
+  box-sizing:content-box;
+  border-width:2px;
+  border-color:white;
+  height:30px;
+  border-radius:10px 10px 10px 10px;
+
+}
+
+.call_to_actionp {
+  font-size:24px;
+  font-weight:bold;
+  margin: 0 auto;
+}
+
+.subtext.white {
+margin-top: 0px;
+}
+
+.call_to_action {
+  padding-right:64px;
 }
